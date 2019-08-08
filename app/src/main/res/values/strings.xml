@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">UKP_Psikolog</string>
+    <string name="nav_home">Beranda</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_notif">Notification</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_notif2">Notif</string>
+    <string name="nav_account">Akun</string>
+    <string name="nav_order">Riwayat\nKonsultasi</string>
+    <string name="font_light">sans-serif-light</string>
+    <string name="font_medium">sans-serif-medium</string>
+    <string name="font_bold">sans-serif-bold</string>
+    <string name="date"></string>
+    <string name="notifikasi"><u>1 Notifikasi Baru</u> </string>
+
+    <string name="menu_minta">Permintaan \nKlien Baru</string>
+    <string name="menu_jadwal">Jadwal\n Saya</string>
+    <string name="menu_layanan">Cari \nKlien Baru</string>
+    <string name="menu_biodata">Ubah\n Biodata</string>
+
+    <string name="button_daftarSaya">Daftar untuk\n Diri Sendiri</string>
+    <string name="button_daftarLain">Daftar untuk\n Orang Lain</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_top_chat"></string>
+    <string-array name="pendidikan_terakhir">
+        <item>Pendidikan</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>D-III</item>
+        <item>D-IV / S-1</item>
+        <item>S2</item>
+    </string-array>
+    <string-array name="jenis_kelamin">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="keahlian">
+        <item>Anak</item>
+        <item>Rumah Tangga</item>
+        <item>Pribadi</item>
+        <item>Pendidikan</item>
+        <item>Indurstri Organisasi</item>
+    </string-array>
+
+    <string name="linkFoto">http://psikologi.ridwan.info/images/</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.komsi.psikolog_interface">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Activities.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_menu_daftar"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_menu_daftar"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Dashboard" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.Daftar.DaftarActivity" />
+        <activity android:name=".Activities.Menu.PermintaanKlien" />
+        <activity android:name=".Activities.Menu.CariKlien" />
+        <activity android:name=".Activities.Menu.UbahBiodata" />
+        <activity android:name=".Activities.Menu.JadwalSaya" />
+        <activity android:name=".Activities.EditActivity.UbahBiodata_Edit" />
+        <activity android:name=".Activities.Notifikasi" />
+        <activity android:name=".Activities.bin.RiwayatKonsultasi" />
+        <activity android:name=".Activities.bin.KonfirmasiKonsultasi" />
+        <activity android:name=".Activities.Loading" />
+        <activity android:name=".Activities.EditActivity.EditAkun" />
+        <activity android:name=".Activities.Password.GantiPassword" />
+        <activity android:name=".Activities.DetailKonsultasi" />
+        <activity android:name=".Activities.DetailKonsultasi_Klien" />
+        <activity android:name=".Activities.Password.LupaPassword" />
+        <activity android:name=".Activities.EditActivity.UploadFoto" />
+
+        <service android:name=".FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".AlarmTask.NotifTask"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".AlarmTask.TimerJadwalTask"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".AlarmTask.FinishTask"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Activities.VerifEmail.SendEmailVerif" />
+        <activity android:name=".Activities.Daftar.TermsOfServices" />
+        <activity android:name=".Activities.About" />
+        <activity android:name=".Activities.Menu.KeahlianPsikolog" />
+        <activity android:name=".Activities.EditActivity.ResetKeahlian"></activity>
+    </application>
+
+</manifest>

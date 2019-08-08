@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/gradStop">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="30dp"
+      android:fontFamily="@string/font_medium"
+      android:text="Keluar Ubah Biodata"
+      android:textAlignment="center"
+      android:id="@+id/daftarKonsul_head"
+      android:textColor="@color/white"
+      android:textSize="25sp" />
+
+
+  <LinearLayout
+      android:layout_below="@+id/daftarKonsul_head"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_medium"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:text="Apakah Anda Yakin Ingin Keluar Ubah Biodata?"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_medium"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:text="Semua Data Yang Belum Disimpan Tidak Akan Disimpan"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_alignParentStart="true"
+      android:layout_marginBottom="20dp">
+
+    <Button
+        android:id="@+id/batal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Batal"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/keluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="Keluar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+  </LinearLayout>
+</RelativeLayout>
